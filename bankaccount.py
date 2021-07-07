@@ -6,10 +6,12 @@ class Bankaccount:
 
     def make_Deposit(self, amount):
         self.amount += amount
+        print(f"You have deposited {amount}")
         return self
 
     def make_withdrawal(self, amount):
         self.amount -= amount
+        print(f"You have Withdrew {amount}")
         if self.amount < 0:
             self.amount -= 5
             print('Charging a 5 dollar Fee')
