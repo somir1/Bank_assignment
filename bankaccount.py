@@ -16,7 +16,6 @@ class Bankaccount:
             self.amount -= 5
             print('Charging a 5 dollar Fee')
 
-
         return self
 
     def display_user_balance(self):
@@ -26,7 +25,6 @@ class Bankaccount:
         self.amount += self.interest_rate * self.amount
         #100 += 0.01 * 100
         return self
-
 
 account1 = Bankaccount(0.01, 100)
 account2 = Bankaccount(0.01, 1900)
